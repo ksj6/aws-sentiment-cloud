@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Placement Predictor</title>
+</head>
+<body>
+
+    <h1>Movie Review Sentiment Predictor</h1>
+
+    <form method="post" action="/predict">
+
+        <label>Review</label><br>
+        <input type="text" name="Review"><br><br>
+
+
+        <input type="submit" value="Predict"><br><br>
+    </form>
+    
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review Sentiment Predictor</title>
+</head>
+<body>
+
+    <h1>Movie Review Sentiment Predictor</h1>
+
+    <form method="post" action="/predict">
+
+        <label>Review</label><br>
+        <input type="text" name="text"><br><br>
+
+        <input type="submit" value="Predict"><br><br>
+    </form>
+
+    {% if sentiment %}
+        <p><strong>Sentiment Prediction:</strong> {{ sentiment }}</p>
+    {% endif %}
+    
+</body>
+</html>
